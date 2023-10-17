@@ -34,7 +34,12 @@
 		"commitlint": "commitlint --edit",
 		"commitizen": "exec < /dev/tty && git cz --hook || true"
 	},
+	"peerDependencies": {
+		"react": ">=17",
+		"react-dom": ">=17"
+	},
 	"dependencies": {
+		"@aragon/ods": "0.3.2",
 		"@hookform/resolvers": "^3.1.1",
 		"@nivo/bar": "^0.83.0",
 		"@nivo/core": "^0.83.0",
@@ -47,6 +52,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-hook-form": "^7.45.2",
+		"tailwindcss-fluid-type": "^2.0.3",
 		"zod": "^3.21.4",
 		"zustand": "^4.3.9"
 	},
