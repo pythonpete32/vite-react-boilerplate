@@ -1,9 +1,10 @@
 import { Router } from "@tanstack/router";
 import { IndexRoute } from "./IndexRoute";
 import { rootRoute } from "./RootRoute";
+import { SettingsRoute } from "./SettingsRoute";
+import { BudgetsRoute } from "./DaoRoute";
 
-const routeTree = rootRoute.addChildren([IndexRoute]);
-
+const routeTree = rootRoute.addChildren([IndexRoute, SettingsRoute, BudgetsRoute]);
 const router = new Router({ routeTree });
 
 declare module "@tanstack/router" {
